@@ -1,6 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Uh-oh, Error",
+};
 
 export default function Error({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
 	useEffect(() => {
